@@ -1,0 +1,41 @@
+body {
+    font-family: "Microsoft yahei";
+}
+
+td>h3 {
+    font-size: 30px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    
+    display: block;
+    background-color: #202020;
+    width: 240px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-indent: 2em;
+}
+
+a:link, a:visited {
+    color: skyblue;
+}
+
+a:hover {
+    background-color: #505050;
+}
+
+a:active {
+    background-color: darkgrey;
+}
+
+iframe {
+    width: 700px;
+    height: 500px;
+    background-color: #202020;
+}
+

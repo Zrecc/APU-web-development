@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Specify the number of rows or columns a cell should span
+    </title>
+</head>
+<body>
+<center>
+    <h1>
+        Learn how to specify the number of rows or columns a cell
+        should span
+    </h1>
+</center>
+<table border="1" cellspacing="10" align="center">
+    <tr>
+        <th width="200px" height="30px" colspan="2">
+            Day
+        </th>
+        <th width="100px" height="30px">Money Spent</th>
+        <th width="100px" height="30px">
+            Total Travel Spent
+            Per Day
+        </th>
+    </tr>
+    <tr>
+        <td rowspan="2">Day 1</td>
+        <td>T-Shirt</td>
+        <td>RM 25.00</td>
+        <td rowspan="2" align="right">RM 70.00</td>
+    </tr>
+    <tr>
+        <td>Fruit - Banana</td>
+        <td>RM 45.00</td>
+    </tr>
+    <tr>
+        <td>Day 2</td>
+        <td>Sourvenir - KeyChain</td>
+        <td>RM 35.00</td>
+        <td align="right">RM 35.00</td>
+    </tr>
+    <tr>
+        <th colspan="3" align="right">TOTAL SPENT:</th>
+        <th align="right">RM 105.00</td>
+    </tr>
+</table>
+</body>
+</html>

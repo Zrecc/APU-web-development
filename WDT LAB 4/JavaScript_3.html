@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            font-family: "Microsoft yahei";
+            margin: 0;
+        }
+        #background > div{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+            font-size: 80px;
+            color: white;
+        }
+        #background {
+            display: inline-block;
+            background-repeat: no-repeat;
+            background-position: center -500px;
+            width: 100%;
+            height: 1080px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div id="background">
+        <div id="phrase"></div>    
+    </div>  
+    <script>
+
+        var bgimage,
+        message;
+        urrentDate = new Date(),
+        currentHour = currentDate.getHours;
+        
+
+        if (currentHour >= 6 && currentHour <= 11.59) {
+            bgimage = "morning.jpg",
+            message = "Good Morning!";
+        }
+        else if (currentHour >= 12 && currentHour <= 16.59) {
+            bgimage = "afternoon.jpg"
+            message = "Good Afternoon!"
+        }
+        else if (currentHour >= 17 && currentHour <= 21.59) {
+            bgimage = "evening.jpg"
+            message = "Good Evening!"
+        }
+        else if (currentHour >= 22 && currentHour <= 23.59) {
+            bgimage = "night.jpg"
+            message = "Good Night!"
+        }
+        else {
+            bgimage = "night.jpg"
+            message = "Good Night!"
+        }
+
+        document.getElementById('background').style.backgroundImage = "url('media/" + bgimage + "')";
+        document.getElementById('phrase').innerHTML = message;
+
+    </script>    
+
+
+</body>
+</html>

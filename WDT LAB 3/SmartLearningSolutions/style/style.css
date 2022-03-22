@@ -1,0 +1,21 @@
+h1,
+h2,
+h3 {
+    font-family: Verdana;
+    color: #00785c;
+}
+body {
+    font-family: Arial;
+}
+a {
+    text-decoration: none;
+    color: #0095b1;
+}
+a:hover {
+    background-color: #baebf5;
+}
+hr {
+    border-top: 5px dotted #00785c;
+}
+
+
