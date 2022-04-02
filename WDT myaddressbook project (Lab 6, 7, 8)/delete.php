@@ -1,4 +1,7 @@
 <?php
+include("session.php");
+?>
+<?php
     include("conn.php");
 
     //$_GET[‘id’] — Get the integer value from id parameter in URL. 

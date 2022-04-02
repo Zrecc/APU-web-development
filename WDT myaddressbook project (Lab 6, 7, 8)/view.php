@@ -1,3 +1,6 @@
+<?php
+include("session.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +8,21 @@
     <title>Document</title>
 </head>
 <body>
-
+    <?php
+    if(isset($_POST["logout"])){
+        session_start();
+        header("location: login.php");
+        session_destroy();
+    } ?>
+    <form method="post">
+    <button name="logout">Logout</button>
+    </form>
     <?php include("conn.php");
     $result = mysqli_query($con,"SELECT * FROM contacts");
     ?>
 
     <table width="90%">
-        <tr bgcolor="#CC99FF">
+        <tr bgcolor="aqua">
             <td>Name</td>
             <td>Phone Number</td>
             <td>Email</td>
@@ -25,7 +36,7 @@
         <?php
             while($row = mysqli_fetch_array($result))
             {
-            echo '<tr bgcolor="#99FF66">';
+            echo '<tr bgcolor="lightblue">';
                 echo "<td>";
                 echo $row['contact_name'];
                 echo "</td>";

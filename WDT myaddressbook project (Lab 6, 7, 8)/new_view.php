@@ -48,9 +48,6 @@
 
     </style>
 
-
-
-
 </head>
 <body>
     <br>
@@ -66,7 +63,7 @@
     <?php 
         include("conn.php");
         $search = $_GET['search'];
-        $result = mysqli_query($con,"SELECT * FROM contacts WHERE contact_name='$search'");
+        $result = mysqli_query($con,"SELECT * FROM contacts WHERE contact_name LIKE '$search'");
     ?>
     <div class="flex-container">
         <?php
